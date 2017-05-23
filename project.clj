@@ -8,6 +8,6 @@
                  [org.clojure/clojurescript "1.9.229"]
                  [reagent "0.6.0"]]
   ;:main ^:skip-aot re-grommet.core
-  :target-path "target/%s"
+  ;:target-path "target/%s"
   ;:profiles {:uberjar {:aot :all}}
   )
