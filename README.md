@@ -9,21 +9,52 @@ simplified use with [reagent](https://github.com/reagent-project/reagent).  The 
 
 ## Usage
 
-Add your grommet stylesheet to your _index.html_
-```clojure
+* Include the regrommet dependency in your project file
 
+* In your source  refer to the re-grommet namespace
+```clojure
+(ns myapp.core
+  (:require [re-grommet.core :as rg]))
 ```
+
+
 
 
 ## Examples
 
-...
+* Create a gromment _Anchor_.  Note the use of the Reagent `:>` syntax to refer to native React objects 
+```clojure
+(defn nav-link
+  [uri title page]
+  (let [selected-page (rf/subscribe [:page])]
+    [:> rg/Anchor {:class (when (= page @selected-page) "active")
+                   :href  uri}
+     title]))
+```
 
-Coming soon!
+
+*  Create a simple footer.   
+```clojure
+(defn footer
+  []
+  [:> rg/Footer {:size "medium"}
+   [:> rg/Title ]
+   [:> rg/BoxRG {:direction "row"
+                 :align "center"
+                 :pad {:between "medium"}}
+    [:> rg/Paragraph "2017 Re-Grommet"]]])
+```
+
+### Notes
+* To avoid symbol collisions, Grommet __Box__ and __List__ have been named __BoxRG__ and __ListRG__ respectively
+* Grommet icons are suffixed with __Icon__ such that the __Add__ icon should be referenced as __AddIcon__ in code
+* This is  rather _alpha_ at this point, any comments, questions and PR's are welcme
+
+### Todo
+* Support the more complex Grommet components (e.g. Chart)
 
 ## License
 
-Copyright © 2017 FIXME
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
