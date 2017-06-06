@@ -45,6 +45,8 @@ simplified use with [reagent](https://github.com/reagent-project/reagent).  The 
     [:> rg/Paragraph "2017 Re-Grommet"]]])
 ```
 
+_More examples on the way..._
+
 ### Notes
 * To avoid symbol collisions, Grommet __Box__ and __List__ have been named __BoxRG__ and __ListRG__ respectively
 * Grommet icons are suffixed with __Icon__ such that the __Add__ icon should be referenced as __AddIcon__ in code
