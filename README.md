@@ -7,9 +7,13 @@ simplified use with [reagent](https://github.com/reagent-project/reagent).  The 
 
 [![Clojars Project](http://clojars.org/re-grommet/latest-version.svg)](http://clojars.org/re-grommet)
 
+This version of __re-grommet__ is built using Grommet 1.3.4
+
 ## Usage
 
 * Include the regrommet dependency in your project file
+
+* Include grommet CSS in your application's HTML (prebuilt themes are avaiable [here](https://cdnjs.com/libraries/grommet/1.3.4) )
 
 * In your source  refer to the re-grommet namespace
 ```clojure
@@ -58,5 +62,4 @@ _More examples on the way..._
 ## License
 
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Distributed under the Eclipse Public License either version 1.0.
