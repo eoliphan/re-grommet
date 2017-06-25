@@ -13,7 +13,7 @@ This version of __re-grommet__ is built using Grommet 1.3.4
 
 * Include the regrommet dependency in your project file
 
-* Include grommet CSS in your application's HTML (prebuilt themes are avaiable [here](https://cdnjs.com/libraries/grommet/1.3.4) )
+* Include grommet CSS in your application's HTML (prebuilt themes are available [here](https://cdnjs.com/libraries/grommet/1.3.4) )
 
 * In your source  refer to the re-grommet namespace
 ```clojure
