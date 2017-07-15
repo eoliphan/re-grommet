@@ -1,4 +1,6 @@
- (ns re-grommet.macros)
+ (ns re-grommet.macros
+   (:require [oops.core :refer [oget oset! ocall oapply ocall! oapply!
+                                oget+ oset!+ ocall+ oapply+ ocall!+ oapply!+]]))
 
 (def grommet-react-tags
   '[Accordion
