@@ -1,10 +1,10 @@
-(defproject re-grommet "0.1.1"
+(defproject re-grommet "0.1.2"
   :description "Re-grommet is an interface between ClojureScript's Reagent and the Grommet React Framework"
   :url "https://github.com/eoliphan/re-grommet"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [cljsjs/grommet "1.5.0-0"]
+                 [cljsjs/grommet "1.7.0-0"]
                  [org.clojure/clojurescript "1.9.229"]
                  [binaryage/oops "0.5.5"]
                  [reagent "0.6.2"]]
